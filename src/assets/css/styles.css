@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/*@import "~bootstrap/dist/css/bootstrap.min.css";*/
 /*@import "styles-app-loading.scss";*/
 
 :root {
@@ -7713,7 +7713,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7733,9 +7732,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -10380,40 +10378,6 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(50, 80, 109, 0.5);
 }
 
-.btn-xing {
-  color: #fff;
-  background-color: #026466;
-  border-color: #026466;
-}
-
-.btn-xing:hover {
-  color: #fff;
-  background-color: #013f40;
-  border-color: #013334;
-}
-
-.btn-xing:focus, .btn-xing.focus {
-  box-shadow: 0 0 0 0.2rem rgba(2, 100, 102, 0.5);
-}
-
-.btn-xing.disabled, .btn-xing:disabled {
-  color: #fff;
-  background-color: #026466;
-  border-color: #026466;
-}
-
-.btn-xing:not(:disabled):not(.disabled):active, .btn-xing:not(:disabled):not(.disabled).active,
-.show > .btn-xing.dropdown-toggle {
-  color: #fff;
-  background-color: #013334;
-  border-color: #012727;
-}
-
-.btn-xing:not(:disabled):not(.disabled):active:focus, .btn-xing:not(:disabled):not(.disabled).active:focus,
-.show > .btn-xing.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(2, 100, 102, 0.5);
-}
-
 .btn-github {
   color: #fff;
   background-color: #4183c4;
@@ -10616,40 +10580,6 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-css3:not(:disabled):not(.disabled):active:focus, .btn-css3:not(:disabled):not(.disabled).active:focus,
 .show > .btn-css3.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(1, 112, 186, 0.5);
-}
-
-.btn-dribbble {
-  color: #fff;
-  background-color: #ea4c89;
-  border-color: #ea4c89;
-}
-
-.btn-dribbble:hover {
-  color: #fff;
-  background-color: #e62a72;
-  border-color: #e51e6b;
-}
-
-.btn-dribbble:focus, .btn-dribbble.focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 76, 137, 0.5);
-}
-
-.btn-dribbble.disabled, .btn-dribbble:disabled {
-  color: #fff;
-  background-color: #ea4c89;
-  border-color: #ea4c89;
-}
-
-.btn-dribbble:not(:disabled):not(.disabled):active, .btn-dribbble:not(:disabled):not(.disabled).active,
-.show > .btn-dribbble.dropdown-toggle {
-  color: #fff;
-  background-color: #e51e6b;
-  border-color: #dc1a65;
-}
-
-.btn-dribbble:not(:disabled):not(.disabled):active:focus, .btn-dribbble:not(:disabled):not(.disabled).active:focus,
-.show > .btn-dribbble.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 76, 137, 0.5);
 }
 
 .btn-instagram {
@@ -14359,16 +14289,6 @@ button.bg-tumblr:focus {
   background-color: #22364a !important;
 }
 
-.bg-xing {
-  background-color: #026466 !important;
-}
-
-a.bg-xing:hover, a.bg-xing:focus,
-button.bg-xing:hover,
-button.bg-xing:focus {
-  background-color: #013334 !important;
-}
-
 .bg-github {
   background-color: #4183c4 !important;
 }
@@ -14427,16 +14347,6 @@ a.bg-css3:hover, a.bg-css3:focus,
 button.bg-css3:hover,
 button.bg-css3:focus {
   background-color: #015187 !important;
-}
-
-.bg-dribbble {
-  background-color: #ea4c89 !important;
-}
-
-a.bg-dribbble:hover, a.bg-dribbble:focus,
-button.bg-dribbble:hover,
-button.bg-dribbble:focus {
-  background-color: #e51e6b !important;
 }
 
 .bg-instagram {
