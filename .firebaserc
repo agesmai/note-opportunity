@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "noteopportunity": {
+      "hosting": {
+        "note-opportunity": [
+          "noteopportunity"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "noteopportunity"
+  }
+}
