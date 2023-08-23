@@ -1,0 +1,71 @@
+<div class="app-header navbar">
+  <button (click)="toggleSideBar()" class="navbar-toggle border-dark d-lg-none" type="button"><span
+    class="fas fa-sliders"
+    style="color: white;"></span></button>
+  <a class="navbar-brand" href="#/app/dashboard"><img class="navbar-brand-full"
+                                                      src="assets/img/brand/logo-nmanager.png"
+                                                      alt="Nmanager Logo" width="89" height="25">
+    <img class="navbar-brand-minimized" src="assets/img/brand/n-logo.png" alt="Nmanager Logo" width="30"
+         height="30"></a>
+  <!--  click = add class sidebar-lg-show to body tag-->
+  <button (click)="toggleSideBar()" class="navbar-toggle border-dark d-md-down-none" type="button"><i
+    class="fas" [ngClass]="{'fa-bars': !showSideBar, 'fa-ellipsis-vertical': showSideBar}"
+    style="color: white;"></i>
+  </button>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Dashboard</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Personal</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Campaign</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]" routerlink="/security/login">About</a></li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto">
+    <c-dropdown direction="center" alignment="end">
+      <li class="nav-item d-md-down-none"><a cDropdownToggle [caret]="false" class="nav-link" [routerLink]="[]"><i
+        class="fas fa-bell"></i><span
+        class="badge badge-pill badge-danger">5</span></a></li>
+      <ul cDropdownMenu>
+        <div class="dropdown-header text-center"><strong>System</strong></div>
+        <a class="dropdown-item" [routerLink]="[]"><i class="fa fa-bell"></i>
+          Notification<span class="badge badge-info">42</span></a>
+        <a class="dropdown-item" [routerLink]="[]"><i class="fa fa-tag"></i> Messages<span
+          class="badge badge-success">42</span></a><a class="dropdown-item" [routerLink]="[]"><i
+        class="fa fa-tasks"></i> Tasks<span
+        class="badge badge-danger">42</span></a>
+        <a class="dropdown-item" [routerLink]="[]"><i class="fa fa-comments"></i> Comment<span
+          class="badge badge-warning">42</span></a>
+        <div class="divider"></div>
+      </ul>
+    </c-dropdown>
+    <li class="nav-item d-md-down-none"><a class="nav-link" [routerLink]="[]"><i
+      class="fas fa-code"></i></a></li>
+    <li class="nav-item d-md-down-none"><a class="nav-link" [routerLink]="[]"><i
+      class="fas fa-desktop"></i></a></li>
+    <li class="nav-item d-md-down-none">
+      <c-dropdown direction="center" alignment="end">
+        <c-avatar class="img-thumbnail rounded-circle"
+                  src="{{(currentUser.photoURL) ? currentUser.photoURL : '/assets/img/avatars/default-avatar.png'}}"
+                  status="success"
+                  cDropdownToggle [caret]="false"></c-avatar>
+        <ul cDropdownMenu>
+          <div cDropdownHeader class="dropdown-header text-center">
+            <strong>{{(currentUser.displayName) ? currentUser.displayName : currentUser.email.substring(0, currentUser.email.indexOf("@"))}}</strong>
+          </div>
+          <li><a cDropdownItem [routerLink]="[]"><i class="fa fa-user"></i>Profile</a></li>
+          <li><a cDropdownItem [routerLink]="[]"><i class="fa fa-wrench"></i>Settings</a></li>
+          <li><a cDropdownItem class="dropdown-item-text" [routerLink]="[]"><i
+            class="far fa-circle-check"></i>Identity
+            <span class="badge "
+                  [ngClass]="currentUser.emailVerified ? 'badge-success' : 'badge-danger'">{{currentUser.emailVerified ? 'verified' : 'unverified'}}</span></a>
+          </li>
+          <div cDropdownDivider></div>
+          <li><a cDropdownItem [routerLink]="[]" (click)="authService.SignOut()"><i
+            class="fas fa-sign-out-alt"></i>Log out</a></li>
+        </ul>
+      </c-dropdown>
+    </li>
+  </ul>
+  <button (click)="toggleASideBar()" class="navbar-toggle d-md-down-none" type="button">
+    <span class="fas" [ngClass]="{'fa-angle-double-right': !hideASideBar, 'fa-angle-double-left': hideASideBar}"
+          style="color: white;"></span>
+  </button>
+</div>

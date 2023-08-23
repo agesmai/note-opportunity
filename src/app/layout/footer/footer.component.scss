@@ -1,0 +1,141 @@
+.footer-container {
+  display: block;
+}
+
+.footer-top {
+  background-color: #c90336;
+  position: relative;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: inline;
+  width: 100%;
+  color: #2f353a;
+  background-color: #fff;
+  padding: 4px 0 2px;
+}
+
+.footer-bottom a {
+  color: #2f353a;
+  position: relative;
+}
+
+.footer-bottom a:hover {
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.img-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons ul li a {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 4px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #d9d9d9;
+  height: 24px;
+  width: 24px;
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.social-icons ul li a:hover {
+  color: #fff;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.social-icons ul li a.envelope:hover {
+  background-color: #CECB26;
+}
+
+.social-icons ul li a.facebook:hover {
+  background-color: #3b5999;
+}
+
+.social-icons ul li a.twitter:hover {
+  background-color: #2ac6f7;
+}
+
+.social-icons ul li a.dribbble:hover {
+  background-color: #ff5b92;
+}
+
+.social-icons ul li a.skype:hover {
+  background-color: #2797f7;
+}
+
+.social-icons ul li a.linkedin:hover {
+  background-color: #036dc0;
+}
+
+.social-icons ul li a.youtube:hover {
+  background-color: #ff194f;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.social-icons ul li {
+  float: left;
+  margin-right: 8px;
+}
+
+.social-icons ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom .col-sm-4 {
+  display: inline;
+  float: left;
+}
+
+.creator {
+  text-align: right;
+}
+
+.creator-name {
+  cursor: pointer;
+  text-decoration: underline;
+  color: purple !important;
+  font-weight: bolder;
+}
+
+.footer-fixed .app-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1020;
+  height: 50px;
+}
+
+.footer-fixed .app-body {
+  margin-bottom: 50px;
+}
