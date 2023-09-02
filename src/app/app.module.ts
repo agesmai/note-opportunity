@@ -34,62 +34,77 @@ import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {P404Component} from "./components/error/p404/p404.component";
 import {P500Component} from "./components/error/p500/p500.component";
 import {
-    AvatarModule, BadgeModule,
-    BreadcrumbModule, CollapseModule,
-    DropdownModule,
-    GridModule,
-    HeaderModule,
-    NavModule, SidebarModule,
-    TabsModule
+  AvatarModule, BadgeModule,
+  BreadcrumbModule, CollapseModule,
+  DropdownModule,
+  GridModule,
+  HeaderModule,
+  NavModule, SidebarModule,
+  TabsModule
 } from "@coreui/angular";
 import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 
 // Font Awesome
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {ActivityComponent} from './components/activity/activity.component';
+import {UserProfileComponent} from './components/user-profile/user-profile.component';
+import {NgOptimizedImage} from "@angular/common";
+import {ActivityTimelineComponent} from './components/activity-timeline/activity-timeline.component';
+import {OrganizationMapComponent} from './components/organization-map/organization-map.component';
+import {FormsModule} from "@angular/forms";
+import {OrganizationChartModule} from "primeng/organizationchart";
+import {DividerModule} from "primeng/divider";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        DashboardComponent,
-        P404Component,
-        P500Component,
-        FooterComponent,
-        HeaderComponent,
-        HomeLayoutComponent,
-        MainComponent,
-        SidebarComponent,
-        ASidebarComponent,
-    ],
-  imports: [
-    BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    AngularFirestoreModule,
-    AngularFireStorageModule,
-    AngularFireDatabaseModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage()),
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    SecurityModule,
-    GridModule,
-    HeaderModule,
-    DropdownModule,
-    NavModule,
-    BreadcrumbModule,
-    AvatarModule,
-    BadgeModule,
-    SidebarModule,
-    CollapseModule,
-    TabsModule,
-    BsDropdownModule,
-    FontAwesomeModule,
-
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    P404Component,
+    P500Component,
+    FooterComponent,
+    HeaderComponent,
+    HomeLayoutComponent,
+    MainComponent,
+    SidebarComponent,
+    ASidebarComponent,
+    ActivityComponent,
+    UserProfileComponent,
+    ActivityTimelineComponent,
+    OrganizationMapComponent,
   ],
-    providers: [AuthService],
-    bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule,
+        AngularFirestoreModule,
+        AngularFireStorageModule,
+        AngularFireDatabaseModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAuth(() => getAuth()),
+        provideFirestore(() => getFirestore()),
+        provideStorage(() => getStorage()),
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        SecurityModule,
+        GridModule,
+        HeaderModule,
+        DropdownModule,
+        NavModule,
+        BreadcrumbModule,
+        AvatarModule,
+        BadgeModule,
+        SidebarModule,
+        CollapseModule,
+        TabsModule,
+        BsDropdownModule,
+        FontAwesomeModule,
+        NgOptimizedImage,
+        FormsModule,
+        OrganizationChartModule,
+        DividerModule
+    ],
+  providers: [AuthService],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }

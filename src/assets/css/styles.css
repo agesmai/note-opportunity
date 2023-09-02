@@ -2,6 +2,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/dist/css/bootstrap.min.css";
 /*@import "styles-app-loading.scss";*/
+@import "flag-icon-css/css/flag-icons.min.css";
 
 :root {
   --blue: #20a8d8;
@@ -483,7 +484,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #636f83;
-  border: 1px solid #c8ced3;
+  border: 2px solid #6f42c1;
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
@@ -9926,6 +9927,13 @@ a.text-dark:hover, a.text-dark:focus {
   vertical-align: initial;
 }
 
+.avatar-xl {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+}
+
 .avatar-xxl {
   position: relative;
   display: inline-block;
@@ -14893,3 +14901,43 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*ngPrime CSS*/
+
+.p-organizationchart .p-organizationchart-node-content.p-organizationchart-selectable-node:not(.p-highlight):hover {
+  background: #eaeaea;
+  color: deepskyblue;
+}
+.p-organizationchart .p-organizationchart-node-content.p-highlight {
+  background: #007ad9;
+  color: #ffffff;
+}
+.p-organizationchart .p-organizationchart-node-content.p-highlight .p-node-toggler i {
+  color: #00325a;
+}
+.p-organizationchart .p-organizationchart-line-down {
+  background: #333333;
+}
+.p-organizationchart .p-organizationchart-line-left {
+  border-right: 1px solid #333333;
+}
+.p-organizationchart .p-organizationchart-line-top {
+  border-top: 1px solid #333333;
+}
+.p-organizationchart .p-organizationchart-node-content {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  background: whitesmoke;
+  color: #333333;
+  /*padding: 0.571rem 1rem;*/
+}
+.p-organizationchart .p-organizationchart-node-content .p-node-toggler {
+  background: inherit;
+  color: inherit;
+  border-radius: 50%;
+}
+.p-organizationchart .p-organizationchart-node-content .p-node-toggler:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #f3f4f5;
+}

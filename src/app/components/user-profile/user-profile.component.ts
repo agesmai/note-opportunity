@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
-import {AuthService} from '../../shared/services/auth.service';
 import {User} from "../../shared/services/user";
+import {AuthService} from "../../shared/services/auth.service";
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-user-profile',
+  templateUrl: './user-profile.component.html',
+  styleUrls: ['./user-profile.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class UserProfileComponent implements OnInit {
 
   currentUser: User;
 
@@ -17,5 +17,4 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

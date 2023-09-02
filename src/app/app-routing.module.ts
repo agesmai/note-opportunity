@@ -11,9 +11,6 @@ import { Routes, RouterModule } from '@angular/router';
 //layout components
 import {HomeLayoutComponent} from "./layout/home-layout/home-layout.component";
 
-//app components
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-
 //error pages
 import {P404Component} from "./components/error/p404/p404.component";
 import {P500Component} from "./components/error/p500/p500.component";
@@ -21,6 +18,10 @@ import {P500Component} from "./components/error/p500/p500.component";
 // route guard
 import { AuthGuard } from './shared/guard/auth.guard';
 
+//app components
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {UserProfileComponent} from "./components/user-profile/user-profile.component";
+import {OrganizationMapComponent} from "./components/organization-map/organization-map.component";
 
 const routes: Routes = [
 
@@ -34,7 +35,8 @@ const routes: Routes = [
       {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
       // {path: 'about', component: AboutComponent, canActivate: [AuthGuard]},
       // {path: 'users', component: UsersComponent, canActivate: [AuthGuard]},
-      // {path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard]},
+      {path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard]},
+      {path: 'org-map', component: OrganizationMapComponent, canActivate: [AuthGuard]},
     ]
   },
 ];
