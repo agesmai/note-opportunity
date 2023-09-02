@@ -44,6 +44,9 @@ import {
 } from "@coreui/angular";
 import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 
+// Font Awesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -82,6 +85,7 @@ import {BsDropdownModule} from "ngx-bootstrap/dropdown";
     CollapseModule,
     TabsModule,
     BsDropdownModule,
+    FontAwesomeModule,
 
   ],
     providers: [AuthService],

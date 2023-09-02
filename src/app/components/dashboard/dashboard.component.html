@@ -26,30 +26,19 @@
       </div>
       <!-- Calling SignOut() Api from AuthService -->
       <li class="nav-item">
-        <a class="nav-link" (click)="authService.SignOut()">
-          <i class="fas fa-sign-out-alt"></i>Log out
-        </a>
+        <button class="btn-transparent" (click)="authService.SignOut()">
+          <i class="fas fa-sign-out-alt"> Log out</i>
+        </button>
       </li>
     </ul>
   </div>
   <div class="row">
     <div class="col-sm-6 col-lg-3">
-      <div class="card text-white bg-info">
-        <div class="card-body pb-0">
-          <button type="button" class="btn btn-transparent p-0 float-right">
-            <i class="cui-location-pin"></i>
-          </button>
-          <div class="text-value">9.823</div>
-          <div>Members online</div>
-        </div>
-      </div>
-    </div><!--/.col-->
-    <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-primary">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
             <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
-              <i class="cui-settings"></i>
+              <i class="fas fa-gear"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-right" *dropdownMenu>
               <a class="dropdown-item" href="#">Action</a>
