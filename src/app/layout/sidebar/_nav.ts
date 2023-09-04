@@ -61,8 +61,8 @@ export const navItems: INavData[] = [
     name: 'User manager'
   },
   {
-    name: 'User List',
-    url: '/app/users',
+    name: 'Organization',
+    url: '/app/org-map',
     icon: 'fas fa-user',
   },
   {
