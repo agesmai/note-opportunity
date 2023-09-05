@@ -3,7 +3,7 @@ export const environment = {
     projectId: 'noteopportunity',
     appId: '1:812132280946:web:35eb39ce5ed42f8be930eb',
     storageBucket: 'noteopportunity.appspot.com',
-    apiKey: 'AIzaSyBrcfn3e4uQjBbilt332QOlWKJXwstSSvA',
+    apiKey: 'edit with real api key',
     authDomain: 'noteopportunity.firebaseapp.com',
     messagingSenderId: '812132280946',
     measurementId: 'G-6629GXRQ9B',
