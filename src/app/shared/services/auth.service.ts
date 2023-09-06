@@ -99,11 +99,10 @@ export class AuthService {
   }
 
   // Sign in with Google
-  GoogleAuth() {
-    return this.AuthLogin(new auth.GoogleAuthProvider()).then((res: any) => {
-      console.log('Logged in with Google account!!!');
-      this.router.navigate(['app']);
-    });
+  async GoogleAuth() {
+    const res = await this.AuthLogin(new auth.GoogleAuthProvider());
+    console.log('Logged in with Google account!!!');
+    await this.router.navigate(['app']);
   }
 
   // Sign in with Facebook
@@ -114,17 +113,16 @@ export class AuthService {
   }
 
   // Auth logic to run auth providers
-  AuthLogin(provider: any) {
-    return this.afAuth
-      .signInWithPopup(provider)
-      .then((result) => {
-        console.log('Routing to /app');
-        this.router.navigate(['app']);
-        this.SetUserData(result.user);
-      })
-      .catch((error) => {
-        window.alert(error);
-      });
+  async AuthLogin(provider: any) {
+    try {
+      let result = await this.afAuth
+        .signInWithPopup(provider);
+      console.log('Routing to /app');
+      await this.router.navigate(['app']);
+      await this.SetUserData(result.user);
+    } catch (error) {
+      window.alert(error);
+    }
   }
 
   /* Setting up user data when sign in with username/password,

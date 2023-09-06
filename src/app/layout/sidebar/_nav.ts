@@ -75,24 +75,24 @@ export const navItems: INavData[] = [
     name: 'Personal'
   },
   {
-    name: 'Information',
-    url: '/info',
+    name: 'Activities',
+    url: '/app/activities',
     icon: 'fa fa-id-card',
     children: [
       {
         name: 'Overview',
-        url: '/info/overview',
+        url: '/app/activities/overview',
         icon: 'fa fa-street-view'
       },
       {
-        name: 'Basic',
+        name: 'History',
         url: '/base/cards',
         icon: 'fa fa-id-badge'
       },
       {
         name: 'Relationship',
         url: '/base/tooltips',
-        icon: 'cui-graph'
+        icon: 'fas fa-light fa-scroll'
       },
       {
         name: 'Ability',
@@ -102,23 +102,23 @@ export const navItems: INavData[] = [
     ]
   },
   {
-    name: 'Family',
-    url: '/info',
-    icon: 'fa fa-id-card',
+    name: 'Stories',
+    url: '/app/stories',
+    icon: 'fas fa-history',
 
     children: [
       {
-        name: 'Overview',
-        url: '/info/overview',
-        icon: 'fa fa-street-view'
+        name: 'Library',
+        url: '/app/stories/Library',
+        icon: 'fas fa-book-open'
       },
       {
-        name: 'Basic',
+        name: 'Customers',
         url: '/base/cards',
         icon: 'fa fa-id-badge'
       },
       {
-        name: 'Relationship',
+        name: 'Projects',
         url: '/base/tooltips',
         icon: 'cui-graph'
       },

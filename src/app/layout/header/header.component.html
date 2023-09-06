@@ -4,19 +4,19 @@
     style="color: white;"></span></button>
   <a class="navbar-brand" href="#/app/dashboard"><img class="navbar-brand-full"
                                                       src="assets/img/brand/logo-nmanager.png"
-                                                      alt="Nmanager Logo" width="89" height="25">
-    <img class="navbar-brand-minimized" src="assets/img/brand/n-logo.png" alt="Nmanager Logo" width="30"
-         height="30"></a>
+                                                      alt="Nmanager Logo" width="138" height="37">
+    <img class="navbar-brand-minimized" src="assets/img/brand/n-logo.png" alt="Nmanager Logo" width="40"
+         height="40"></a>
   <!--  click = add class sidebar-lg-show to body tag-->
   <button (click)="toggleSideBar()" class="navbar-toggle border-dark d-md-down-none" type="button"><i
     class="fas" [ngClass]="{'fa-bars': !showSideBar, 'fa-ellipsis-vertical': showSideBar}"
     style="color: white;"></i>
   </button>
   <ul class="nav navbar-nav d-md-down-none">
-    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Dashboard</a></li>
-    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Personal</a></li>
-    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Campaign</a></li>
-    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]" routerlink="/security/login">About</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Home</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Ranking</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]">Trophies</a></li>
+    <li class="nav-item px-3"><a class="nav-link" [routerLink]="[]" routerLinkActive="/security/login">News Feed</a></li>
   </ul>
   <ul class="nav navbar-nav ml-auto">
     <c-dropdown direction="center" alignment="end">

@@ -5,7 +5,7 @@
 .footer-top {
   background-color: #c90336;
   position: relative;
-  padding: 5px 0;
+  padding: 2px 0;
   width: 100%;
 }
 
@@ -14,7 +14,7 @@
   width: 100%;
   color: #2f353a;
   background-color: #fff;
-  padding: 4px 0 2px;
+  padding: 8px 0 3px;
 }
 
 .footer-bottom a {
