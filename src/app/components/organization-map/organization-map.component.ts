@@ -14,7 +14,7 @@ export class OrganizationMapComponent {
       label: 'HAS',
       children: [
         {
-          expanded: true,
+          expanded: false,
           type: 'person',
           data: {
             image: 'assets/img/avatars/simson.jpg',
@@ -25,11 +25,11 @@ export class OrganizationMapComponent {
           children: [
 
             {
-              expanded: true,
+              expanded: false,
               label: 'HAS HN',
               children: [
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -39,7 +39,7 @@ export class OrganizationMapComponent {
                   }
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -75,7 +75,7 @@ export class OrganizationMapComponent {
                   ]
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -111,7 +111,7 @@ export class OrganizationMapComponent {
                   ]
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -149,11 +149,11 @@ export class OrganizationMapComponent {
               ]
             },
             {
-              expanded: true,
+              expanded: false,
               label: 'HAS HCM',
               children: [
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -163,7 +163,7 @@ export class OrganizationMapComponent {
                   }
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -199,7 +199,7 @@ export class OrganizationMapComponent {
                   ]
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -235,7 +235,7 @@ export class OrganizationMapComponent {
                   ]
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',
@@ -271,7 +271,7 @@ export class OrganizationMapComponent {
                   ]
                 },
                 {
-                  expanded: true,
+                  expanded: false,
                   type: 'person',
                   data: {
                     image: 'assets/img/avatars/simson.jpg',

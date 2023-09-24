@@ -7,20 +7,6 @@ export const navItems: INavData[] = [
   },
   {
     title: true,
-    name: 'User manager'
-  },
-  {
-    name: 'Organization',
-    url: '/app/org-map',
-    icon: 'fas fa-user',
-  },
-  {
-    name: 'User Profile',
-    url: '/app/user-profile',
-    icon: 'fa fa-user-circle-o'
-  },
-  {
-    title: true,
     name: 'Personal'
   },
   {
@@ -80,6 +66,20 @@ export const navItems: INavData[] = [
   },
   {
     title: true,
+    name: 'User manager'
+  },
+  {
+    name: 'Organization',
+    url: '/app/org-map',
+    icon: 'fas fa-user',
+  },
+  {
+    name: 'User Profile',
+    url: '/app/user-profile',
+    icon: 'fa fa-user-circle-o'
+  },
+  {
+    title: true,
     name: 'Analytics',
   },
   {
@@ -96,5 +96,6 @@ export const navItems: INavData[] = [
       text: 'Disabled'
     },
     attributes: {disabled: true},
-  }
+  },
+
 ];
