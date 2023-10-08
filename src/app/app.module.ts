@@ -54,6 +54,7 @@ import {OrganizationMapComponent} from './components/organization-map/organizati
 import {FormsModule} from "@angular/forms";
 import {OrganizationChartModule} from "primeng/organizationchart";
 import {DividerModule} from "primeng/divider";
+import {TabViewModule} from "primeng/tabview";
 
 @NgModule({
   declarations: [
@@ -101,7 +102,8 @@ import {DividerModule} from "primeng/divider";
         NgOptimizedImage,
         FormsModule,
         OrganizationChartModule,
-        DividerModule
+        DividerModule,
+        TabViewModule
     ],
   providers: [AuthService],
   bootstrap: [AppComponent]

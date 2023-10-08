@@ -66,7 +66,7 @@ export const navItems: INavData[] = [
   },
   {
     title: true,
-    name: 'User manager'
+    name: 'Company'
   },
   {
     name: 'Organization',

@@ -231,9 +231,9 @@
   <!--  </div>-->
   <div class="tab-container">
     <c-nav variant="tabs" class="nav nav-tabs">
-      <a [active]="true" [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="0" cNavLink><i
+      <a [active]="true" [cTabContent]="tabContent" [tabPaneIdx]="0" cNavLink><i
         class="fas fa-list"></i></a>
-      <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="1" cNavLink><i class="fas fa-comment-dots"></i></a>
+      <a [cTabContent]="tabContent" [tabPaneIdx]="1" cNavLink><i class="fas fa-comment-dots"></i></a>
       <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="2" cNavLink><i class="fas fa-gear"></i></a>
     </c-nav>
     <c-tab-content #tabContent="cTabContent" class="tab-content">
